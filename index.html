@@ -32,6 +32,11 @@
       font-weight: bold;
       margin: 36px 0 12px;
     }
+    h3 {
+      color: #222222;
+      font-size: 18px;
+      margin: 20px 0 8px;
+    }
     p {
       margin: 0 0 14px;
     }
@@ -41,6 +46,22 @@
     }
     li {
       margin-bottom: 4px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0 0 14px;
+      font-size: 15px;
+    }
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 8px;
+      border-bottom: 1px solid #dddddd;
+    }
+    th {
+      color: #222222;
+      background: #fff3e8;
     }
     a {
       color: #ff6d00;
@@ -57,70 +78,110 @@
     <h1>Privacy Policy</h1>
     <p><strong>Effective Date:</strong> November 2026</p>
 
-    <p>Thank you for using <strong>Space</strong>. This Privacy Policy explains what information Space collects, how it is used, and the choices you have.</p>
+    <p>Thank you for using <strong>Space</strong>. This Privacy Policy explains what information Space collects, how it is used and stored, who processes it, how long it is kept, and how you can delete it.</p>
 
     <h2>Information We Collect</h2>
 
-    <p><strong>Account information.</strong> You can sign in with Google. We receive your Google account identifier (Firebase user ID) and an ID token from Firebase Authentication. We use these to identify your account and apply your plan limits.</p>
+    <h3>Account information</h3>
+    <p>You sign in with your Google account through Firebase Authentication. We receive a Firebase user ID and an ID token for each sign-in. Firebase Authentication also holds the basic profile details Google provides for your account, such as your name and email address. We use these to identify your account and apply your plan limits.</p>
 
-    <p><strong>Device identifier.</strong> The app creates a random identifier for your installation and sends it with requests to our servers. It is used to apply free usage limits and to link image and chat requests to your installation. It is not linked to your name or phone number.</p>
+    <h3>Device identifier</h3>
+    <p>The app creates a random identifier for each installation and sends it with requests. We use it to apply free usage limits, to link attachments to the device that uploaded them, and to track image requests per device. It is not your name, phone number, or advertising ID.</p>
 
-    <p><strong>Chat messages and attachments.</strong> When you send a message, the text is sent to our servers and then to the AI model provider. If you attach a photo, video, or file, it is uploaded to our servers so that it can be used in your conversation. Messages, attachments, and generated images you save to your account may be stored in cloud storage so they can be restored on your other devices.</p>
+    <h3>Chat messages</h3>
+    <p>When you send a message, the text, the earlier messages in the conversation, and any files attached to the conversation are sent to our servers and then to an AI model provider. Free chats are answered by GenzDealz. Space Pro chats are answered by Anthropic. Your messages are not used to train models by us.</p>
 
-    <p><strong>Image requests.</strong> Prompts, and any source images you choose to edit, are sent to our image generation provider to create the result.</p>
+    <h3>Attachments</h3>
+    <p>If you attach a photo, PDF, text, Markdown, CSV, or other supported file, it is uploaded to our servers. Original attachments are stored in private cloud storage under your account so they can be used in your conversations and retrieved on your other signed-in devices. Supported types are PDF, plain text, Markdown, CSV, JPEG, PNG, GIF, and WebP, up to 50 MB per file.</p>
 
-    <p><strong>Web search requests.</strong> When you ask a question that needs current information, your search query, and any URL you provide, are sent to public web sources and a web reading service to fetch results.</p>
+    <h3>Chat and creation backups</h3>
+    <p>When you are signed in, your chat history and creations are backed up to private cloud storage so they can be restored when you sign in on another device. Deleted conversations are recorded as deleted so they are not restored from an older copy.</p>
 
-    <p><strong>Purchase information.</strong> If you subscribe to Space Pro or buy a token top-up, Google Play processes the payment. We receive a purchase token and the subscription or purchase details from Google Play to verify your purchase. We do not receive your payment card details.</p>
+    <h3>Image requests</h3>
+    <p>When you ask Space to create or edit an image, your prompt and any source images you choose are sent to our image generation provider, fal.ai, which returns the generated image. We keep a reference to the most recent image for each conversation for 30 days so that follow-up edits work.</p>
 
-    <p><strong>Usage counts.</strong> We record the number of chat requests, image generations, and AI tokens you use, so that plan limits can be enforced.</p>
+    <h3>Web search and link reading</h3>
+    <p>When a question needs current information, or when you include a web address, the search terms or address are sent to public sources (Google News and Wikipedia) and to Jina AI, a web reading service, which fetches the page text. These services receive the search terms or web address and the network information of our servers. They do not receive your Google account details.</p>
+
+    <h3>Purchase information</h3>
+    <p>If you subscribe to Space Pro or buy a token top-up, Google Play processes the payment. We receive the purchase token and the product and subscription details from Google Play so we can verify the purchase, and we link it to your account. We do not receive your payment card details.</p>
+
+    <h3>Usage counts</h3>
+    <p>We record how many chats, image generations, and AI tokens you use, so that plan limits can be enforced and top-up credits are tracked.</p>
+
+    <h3>Technical and security data</h3>
+    <p>Our servers handle requests from your device and may log errors and the connecting network address. We use this to keep the service running and to limit abuse.</p>
 
     <h2>Data Stored on Your Device</h2>
-    <p>The app stores your chat history, settings, and creations in the app's private storage on your device. This data stays on your device until you delete it or uninstall the app. Chat history and creations may also be backed up to your account as described above.</p>
+    <p>The app stores your chat history, settings, and creations in the app's private storage on your device. This data stays on your device until you delete it in the app or uninstall the app. The app does not use Android automatic backup, so this data is not copied to your Google Drive by Android. Chats and creations are also backed up to your account as described above when you are signed in.</p>
 
     <h2>How We Use Information</h2>
     <p>We use this information to:</p>
     <ul>
       <li>sign you in and keep your account and plan up to date;</li>
-      <li>answer your messages, generate images, and perform web searches you request;</li>
-      <li>enforce free and Pro usage limits and verify purchases;</li>
+      <li>answer your messages, create and edit images, and run the web searches you request;</li>
+      <li>enforce free and Space Pro usage limits, and verify and credit Google Play purchases;</li>
       <li>restore your chats and creations when you sign in on another device;</li>
       <li>keep the service secure and prevent abuse.</li>
     </ul>
     <p>We do not sell your personal information. We do not use it for advertising.</p>
 
-    <h2>Third-Party Services</h2>
-    <p>Space relies on these providers to operate:</p>
-    <ul>
-      <li><strong>Google</strong> (Firebase Authentication, Google Sign-In, Google Play Billing);</li>
-      <li><strong>AI model providers</strong> that process your chat messages and attachments;</li>
-      <li><strong>An image generation provider</strong> that processes your image prompts and source images;</li>
-      <li><strong>Cloud object storage</strong> for attachments and account backups;</li>
-      <li><strong>Public web sources and a web reading service</strong> for search and link requests;</li>
-      <li><strong>Upstash Redis</strong> for usage counters and purchase records.</li>
-    </ul>
-    <p>Each provider processes data only to provide its part of the service. Their own privacy policies apply to the data they process.</p>
+    <h2>Who We Share Information With</h2>
+    <p>Space relies on these providers to operate. Each receives only the data it needs for its part of the service. Their own privacy policies apply to the data they process.</p>
+    <table>
+      <tr><th>Provider</th><th>What they process</th></tr>
+      <tr><td>Google (Firebase Authentication, Google Sign-In, Google Play Billing)</td><td>Sign-in details, purchase verification</td></tr>
+      <tr><td>Anthropic (Space Pro chats)</td><td>Chat messages, attachments, and web tools requested in Space Pro chats</td></tr>
+      <tr><td>GenzDealz (free chats)</td><td>Chat messages and attachments</td></tr>
+      <tr><td>fal.ai (image generation and editing)</td><td>Image prompts and source images</td></tr>
+      <tr><td>Jina AI, Google News, Wikipedia (web search and link reading)</td><td>Search terms and web addresses you ask about</td></tr>
+      <tr><td>Backblaze B2 (cloud storage)</td><td>Attachments and account backups</td></tr>
+      <tr><td>Upstash (Redis)</td><td>Usage counters and purchase records</td></tr>
+      <tr><td>Cloudflare (hosting of our servers)</td><td>Requests passing through our servers</td></tr>
+    </table>
+    <p>We do not share your information with advertisers.</p>
 
     <h2>Data Retention</h2>
-    <ul>
-      <li>Usage counters are kept only as long as needed to enforce limits. Pending usage holds expire after 15 minutes, and usage records are kept for up to 45 days.</li>
-      <li>Account backups and attachments are kept until you delete them or delete your account.</li>
-    </ul>
+    <table>
+      <tr><th>Data</th><th>How long we keep it</th></tr>
+      <tr><td>Free daily chat and image counters</td><td>Until the end of the day (about 24 hours)</td></tr>
+      <tr><td>Space Pro monthly token usage</td><td>About 45 days</td></tr>
+      <tr><td>Pending usage holds for Space Pro replies</td><td>15 minutes, then released</td></tr>
+      <tr><td>Reference to the latest image in a conversation</td><td>30 days</td></tr>
+      <tr><td>Chat backups and creations</td><td>Until you delete them in the app or delete your account</td></tr>
+      <tr><td>Attachments</td><td>Until you delete the conversation that uses them, or delete your account</td></tr>
+      <tr><td>Purchase records (see Account Deletion)</td><td>Kept after account deletion, with no automatic expiry</td></tr>
+    </table>
 
     <h2>Permissions</h2>
     <ul>
       <li><strong>Internet:</strong> to connect to our servers.</li>
-      <li><strong>Photos, videos, and files:</strong> selected through your device's system pickers. The app only reads the files you choose.</li>
+      <li><strong>Photos, videos, and files:</strong> you choose them through your device's system picker. The app reads only the files you select. Space does not request access to your full photo library or storage.</li>
     </ul>
+
+    <h2>Your Choices</h2>
+    <p>You can delete individual chats and creations in the app at any time. You can delete your Space account and all associated data from within the app (see Account Deletion below). You can also stop using the app at any time and uninstall it to remove the data stored on your device.</p>
+
+    <h2>Account Deletion</h2>
+    <p><strong>Deleting your account in the app.</strong> Open Settings, tap <strong>Delete account</strong>, and confirm. This permanently deletes:</p>
+    <ul>
+      <li>your chat history, creations, and attachments stored on our servers;</li>
+      <li>your usage counters and token balances;</li>
+      <li>your Space sign-in account in Firebase Authentication.</li>
+    </ul>
+    <p>Chats and creations stored on your device are also removed from the app. Deletion cannot be undone.</p>
+
+    <p><strong>Space Pro subscriptions.</strong> Cancel your Space Pro subscription in Google Play before you delete your account. If you do not, Google may continue to charge you after your account is deleted. Any paid time left on your subscription is lost when your account is deleted.</p>
+
+    <p><strong>Purchase records.</strong> After deletion we keep a record of each Google Play purchase that was used on Space. The record is not linked to your name or to your deleted account. It prevents the same purchase from being credited twice or used to claim Space Pro on another account.</p>
+
+    <p><strong>If you cannot access the app.</strong> Email <a href="mailto:alivelusainikhil786@gmail.com">alivelusainikhil786@gmail.com</a> from the email address linked to your Google account, with the subject "Delete my Space account". We will verify the request and delete your data within 30 days.</p>
 
     <h2>Children's Privacy</h2>
     <p>Space is not directed to children under 13, and we do not knowingly collect personal information from children. If you believe a child has provided personal information, contact us and we will delete it.</p>
 
     <h2>Security</h2>
-    <p>Requests are sent over HTTPS. Access to your account data is protected by Firebase Authentication, and purchases are verified with Google Play on our servers. No method of transmission or storage is completely secure.</p>
-
-    <h2>Your Choices</h2>
-    <p>You can delete chats and creations in the app. You can request deletion of your account data by contacting us. You can stop using the app at any time and uninstall it to remove local data.</p>
+    <p>Requests between the app and our servers are sent over HTTPS. Access to your account data requires a valid Firebase sign-in token. Purchases are verified with Google Play on our servers. Storage is private and not publicly accessible. No method of transmission or storage is completely secure.</p>
 
     <h2>Changes to This Privacy Policy</h2>
     <p>We may update this policy. Changes will be posted on this page with a new effective date.</p>
